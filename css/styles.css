@@ -1,0 +1,220 @@
+body {
+    margin: 0px;
+}
+
+#page {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body, h1, p, a, input, button {
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+a.navbar-brand {
+    margin-right: 8px;
+}
+
+nav .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cart-icon {
+    padding-right: 0 !important;
+}
+
+.sub-menu {
+    display: none;
+    padding-top: 8px;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    z-index: 10;
+    list-style: none; 
+}
+
+.main-menu li:hover .sub-menu, 
+.sub-menu:hover {
+    display: block; 
+}
+
+.sub-menu li {
+    border: solid 2px black;
+    background-color: white;
+    padding: 14px 70px
+}
+
+.sub-menu li:hover {
+    background-color: black;
+    color: white;
+}
+
+.search-bar {
+    background-color: #FAFAFA;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar input {
+    font-size: 20px;
+    border: none;
+    background-color: #FAFAFA;
+}
+
+#hero_section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('../assets/images/homepage_hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#hero_description p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+#hero_description {
+    position: absolute; 
+    top: 50%; 
+    right: 10%; 
+    transform: translateY(-50%);
+    padding: 30px 70px;
+    height: 390px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background: rgba(192, 192, 192, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1.display-3 {
+    margin-bottom: 24px;
+}
+
+/* To ensure hero_description container covers full background image */
+@media (max-width: 488px) {
+    #hero_section {
+        height: 60vh;
+    }
+    #hero_description {
+        transform: none;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#hero_description a {
+    margin-top: 24px;    
+}
+
+button {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 25px 35px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#promotions_section {
+    padding-top: 48px;
+}
+
+footer {
+    padding-top: 120px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* categoryWinter.html styles */
+.category_listing_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.category_listing_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_price_div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.listing_label {
+    font-weight: bold;
+}
+
+/* categories.html styles */
+.categories_section {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.category img {
+    width: 100%;
+}
+
+
+/* detailPage */
+.detailSection {
+    margin-top: 24px;
+}
+
+div.col-md-6.text-center.text-md-start{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
